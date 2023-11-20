@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <script>
+        var now = new Date();
+        const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        document.write(now + "<br><br>");
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        var month = months[now.getMonth()];
+        var day = days[now.getDay()];
+        document.write("<b>Now: " + hour + ":" + minute + ":" + second + "</b><br>");
+
+        document.write("<b style='color: blue'>Today: " + day + ", " + month + " " + now.getDate() + "th, " + now.getFullYear() + "</b>");
+
+
+    </script>
+
+</body>
+
+</html>
